@@ -1,0 +1,84 @@
+<!Doctype html>
+<html lang ="en">
+
+	<head>
+		<!--meta tags-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+		<!--Title of the Webpage-->
+		<title> Welcome </title>
+
+		<!--Link to Bootstrap stylesheet-->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- Link to external stylesheet-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+    	<!-- Links to external Ajax, jQuery and Bootstrap libraries -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+
+
+
+<body>
+    <!-- Navigation Bar -->
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+        <!-- Logo and Dropdown List-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">MEMEIFY</a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">TrendingMemes</a></li>
+                <li><a href="recommendmeme.html">Recommend a Meme</a></li>
+                <li class="active"><a href="uploadameme.html">Upload a Meme</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+         </div>
+        </div>
+      </nav>
+
+		<div class="container" style="padding: 15px;">
+			<h1><b>Welcome to MemeIfy</b></h1>
+			<p>
+				Welcome to MemeIfy, your online meme search tool...
+			</p>
+		</div>
+
+	  <!-- Search Bar-->
+	  <div class="container" id="search" style="padding: 15px;">
+<br />
+	      	<p>Search the text box below to find a meme...</p>
+	      	<input type="text" name="search" placeholder="Search a Meme...">
+	      	<button id="myBtn">Button</button>
+<br />
+	      </div>
+
+
+<br />
+    <!-- Footer of the website -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; MemeIfy</small>
+            <!-- Social Media Icons in footer -->
+          </div>
+    </footer>
+
+
+	
+</body>
+
+</html>

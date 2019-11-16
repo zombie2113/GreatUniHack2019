@@ -1,0 +1,45 @@
+h1{
+	text-align: center;
+	font: sans-serif;
+	font-size: 90px;
+}
+
+body{
+	background-image: url(background.JPG);
+}
+
+.container{
+	background-color: whitesmoke; 
+	padding: inherit; 
+	backface-visibility: hidden
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+p{
+	text-align: left;
+	font: sans-serif;
+	font-size: 25px;
+}
+
+/* Styling for search textbox */
+input[type=text] {
+	width: 130px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+	width: 90%;
+}
+
+/*The CSS for the footer*/
+.sticky-footer {
+}
+
+small{color: black;
+        font-size: 20px;
+        opacity: 1.0;}
