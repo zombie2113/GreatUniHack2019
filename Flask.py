@@ -18,7 +18,6 @@ def get_post():
 
 @app.route('/api')
 def hello_worlds():
-<<<<<<< HEAD
    urls = [("Hungry boi, invest now frens", "https://i.redd.it/uvenlxagz1z31.jpg"),
             ("Rick and Morty formats are always great choice. Stop asking questions and invest in this format!","https://i.redd.it/7rora8l032z31.jpg"),
             ("Do it! Invest in the most important super hero of all time. So you always can bury good corpses..","https://i.redd.it/vv5arx2bw0z31.jpg"),
@@ -28,12 +27,9 @@ def hello_worlds():
             ("You gotta love Keanu Reeves formats!", "Invest in this new meme format!,https://i.redd.it/"),("Invest in my dad and brother","https://i.redd.it/3fa0vk33jwy31.jpg"),
             ("Invest today!","https://i.redd.it/wi5b15u1m2z31.jpg"),("Dope or Nope meme format! Invest now!","https://i.redd.it/d29veri8l0z31.jpg"),
             ("Invest before becoming a victim to the next emergency,https://i.redd.it/b9dz1hulsxy31.jpg")]
-   vals = np.random.choice(data.url.shape[0], 15)
-=======
-   
+
    vals = np.random.choice(data.url.shape[0], 4)
    ids = list(data.id[vals])
->>>>>>> d8567e5ac48575ad1f9e75586a5022d3166ab1fa
    urls = list(data.url[vals])
    scores = list(data.score[vals])
    #scores = [str(score) for score in scores]
