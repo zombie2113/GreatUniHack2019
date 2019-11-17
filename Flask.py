@@ -16,7 +16,7 @@ def individual_photo(id_photo):
    print(photo_info)
 
    return render_template("photo.html", 
-                     name=photo_info.title.values[0], 
+                     name=photo_info.title.values[0].decode('utf-8'), 
                      link=photo_info.permalink.values[0],
                      url=photo_info.url.values[0],
                      score=photo_info.score.values[0],

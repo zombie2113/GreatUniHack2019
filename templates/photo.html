@@ -1,28 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-    	<script src="/logic.js"></script>
-        <link rel="stylesheet" type="text/css" href="/style.css">
+   <script src="/logic.js"></script>
+   <link rel="stylesheet" type="text/css" href="/style.css">
+   <head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
 
+    <!--Title of the Webpage-->
+    <title> Welcome </title>
+
+    <!--Link to Bootstrap stylesheet-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Link to external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Links to external Ajax, jQuery and Bootstrap libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
 </head>
+
 <body>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<script type=text/javascript>
-		
-	</script>
-
-    
-	<div class="photo img">
-
-        <h2>{{name}}</h2>
-        <p>Original link:</p>
-        <a id="link2" href="{{link}}">{{link}}</a>
-        <img id="photo2" href="" src="{{url}}" alt="GIF 2" style="width: 300px; height: 200px;" />
-        <p id="score">{{score}}</p>
-        <button onclick="vote_photo_id('{{id}}')">upvote</button>
+    <!-- Navigation Bar -->
+    <div class="bg-img">
+        <div class="container">
+            <!-- Menu Items -->
+            <div class="topnav">
+                <a href="/">Home</a>
+                <a href="/login.html">Login</a>
+                <a href="/create.html">Create Account</a>
+                <a href="/Maps.html">Maps</a>
+            </div>
+        </div>
     </div>
 
+    <div class="container text-center" style="background-color: whitesmoke; backface-visibility: hidden; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 10px; margin-left: 50px;">
+
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-10">
+
+                <h2>{{name}}</h2>
+                <p>Original link:</p>
+                <a id="link2" href="{{link}}"><p>{{link}}</p></a>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+        </div>
+
+
+
+        <div class="row">
+
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-10">
+                <img id="photo2" href="" src="{{url}}" alt="GIF 2" style="width: 60%;" />
+            </div>
+
+            <div class="col-md-1">
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-1">
+            </div>
+
+            <div class="col-md-10">
+                <p id="score" class="text-center">{{score}}</p>
+            <button onclick="vote_photo_id('{{id}}')" class="text-center">upvote</button>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+
+
+</div>
 </body>
 </html>
