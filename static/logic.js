@@ -8,7 +8,7 @@ async function myFunction() {
     console.log(response2);
     for (i = 0; i < 4; i++) {
         document.getElementById("title"+String(i+1)).textContent = response2[i][3];
-        document.getElementById("link"+String(i+1)).href = response2[i][4];
+        document.getElementById("link"+String(i+1)).href = '/photo/'+response2[i][0];
         document.getElementById("photo"+String(i+1)).src = response2[i][1];
         document.getElementById("phototext"+String(i+1)).textContent = response2[i][2];
     }
@@ -31,6 +31,28 @@ async function vote_photo(number) {
 
     //body: JSON.stringify({ id: idstr }), // data can be `string` or {object}!
     document.getElementById("phototext"+String(number)).textContent = window.info[number-1][2];
+    const content = await rawResponse.json();
+    //alert(content.message);
+
+}
+
+
+
+async function vote_photo_id(id_photo) {
+    //console.log(window.info[number - 1][0]);
+    console.log(window.info);
+    
+    let rawResponse = await fetch('/api/vote', {
+        method: "POST",
+        body: "id="+String(id_photo),
+        headers:
+        {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    });
+
+    //body: JSON.stringify({ id: idstr }), // data can be `string` or {object}!
+    document.getElementById("score").textContent = parseInt(document.getElementById("score").textContent) + 1;
     const content = await rawResponse.json();
     //alert(content.message);
 

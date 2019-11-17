@@ -10,6 +10,18 @@ app = Flask(__name__, static_url_path='')
 def hello_world():
    return app.send_static_file("index.html")
 
+@app.route('/photo/<id_photo>')
+def individual_photo(id_photo):
+   photo_info = data[data.id == id_photo]
+   print(photo_info)
+
+   return render_template("photo.html", 
+                     name=photo_info.title.values[0], 
+                     link=photo_info.permalink.values[0],
+                     url=photo_info.url.values[0],
+                     score=photo_info.score.values[0],
+                     id=photo_info.id.values[0])
+
 @app.route('/login')
 def login_page():
    return app.send_static_file("login.html")
