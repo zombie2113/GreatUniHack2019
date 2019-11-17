@@ -9,6 +9,7 @@ body, html{
 	height: 100%;
 }
 
+
 /*Nav-bar CSS*/
  .bg-img {
   /* The image used */
@@ -60,6 +61,22 @@ body, html{
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;	
+
+.photo{
+	margin: 10px 10px 10px 10px;
+	font: sans-serif;
+	font-size: 90px;
+}
+
+.container{
+	background-color: whitesmoke; 
+	padding: inherit; 
+	backface-visibility: hidden
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
 }
 
 p{
