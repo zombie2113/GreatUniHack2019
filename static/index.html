@@ -26,40 +26,29 @@
 
 <body>
 	<!-- Navigation Bar -->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-
-			<!-- Logo and Dropdown List-->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a href="index.html" class="navbar-brand">MEMEIFY</a>
-			</div>
-
+	<div class="bg-img">
+		<div class="bg-img">
+			<div class="container">
 			<!-- Menu Items -->
-			<div class="collapse navbar-collapse" id="mainNavBar">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="#">TrendingMemes</a></li>
-					<li><a href="uploadameme.html">Upload a Meme</a></li>
-					<li><a href="recommendmeme.html">Recommend a Meme</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
+			<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="login.html">Login</a>
+			<a href="create.html">Create Account</a>
+			<a href="Maps.html">Maps</a>
 			</div>
-		</div>
-	</nav>
+			</div>
+		</div> 
 
-	<div class="container" style="padding: 10px;">
+	<div class="container" style="background-color: whitesmoke; padding: inherit; backface-visibility: hidden; padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 10px;">
 		<h1><b>Welcome to MemeIfy</b></h1>
-		<p>
-			Welcome to MemeIfy, your online meme search and recommendation tool...
-		</p>
-		<button onclick="myFunction()">Click me</button>
 		<br />
-		<div id="photo_wrapper">
+		<p>
+			Welcome to MemeIfy, your online meme recommendation tool. This is a web application built by a group
+			of passionate students to enable you to enjoy your favourite meme-ories all in one place. This applicaton is built to allow users to upvote their favourite memes, recommends memes based upon user votes and view which memes are popular in different locations around the world.
+		</p>
+		<br />
+		<br />
+		<div id="photo_wrapper" style="padding-bottom: 20px;">
 			<div class="col-md-3">
 				<img id="photo1" src="gif1.gif" alt="GIF 1" style="width: 275px; height: 175px;" />
 			</div>
@@ -73,31 +62,72 @@
 				<img id="photo4" src="gif4.gif" alt="GIF 4" style="width: 275px; height: 175px;" />
 			</div>
 		</div>
-	</div>
 
-	<!-- Search Bar-->
-	<div class="container" id="search" style="padding: 15px;">
-		<br />
-		<form class="hello_world">
-			<p>Search the text box below to find a meme...</p>
-			<input type="text" name="search" placeholder="Search a Meme...">
-			<button id="myBtn" value="search">Button</button>
-			<br />
-		</form>
-	</div>
+		<div>.</div>
 
-	<br />
-	<br />
-	<!-- Footer of the website -->
-	<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-		<div class="container text-center">
-			<small>Copyright &copy; MemeIfy</small>
-			<!-- Social Media Icons in footer -->
+		<div id="photo_wrapper" style="padding-bottom: 20px;">
+			<div class="col-md-3">
+				<img id="photo5" src="gif1.gif" alt="GIF 1" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo6" src="gif2.gif" alt="GIF 2" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo7" src="gif3.gif" alt="GIF 3" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo8" src="gif4.gif" alt="GIF 4" style="width: 275px; height: 175px;" />
+			</div>
 		</div>
+
+		<div>.</div>
+
+		<div id="photo_wrapper" style="padding-bottom: 20px;">
+			<div class="col-md-3">
+				<img id="photo9" src="gif1.gif" alt="GIF 1" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo10" src="gif2.gif" alt="GIF 2" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo11" src="gif3.gif" alt="GIF 3" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo12" src="gif4.gif" alt="GIF 4" style="width: 275px; height: 175px;" />
+			</div>
+		</div>
+
+		<div>.</div>
+		
+		<div id="photo_wrapper" style="padding-bottom: 20px;">
+			<br />
+			<div class="col-md-3">
+				<img id="photo13" src="gif1.gif" alt="GIF 1" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo14" src="gif2.gif" alt="GIF 2" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo15" src="gif3.gif" alt="GIF 3" style="width: 275px; height: 175px;" />
+			</div>
+			<div class="col-md-3">
+				<img id="photo16" src="gif4.gif" alt="GIF 4" style="width: 275px; height: 175px;" />
+			</div>
+		</div>
+
+		<div>.</div>
+
+		<p>
+		<br />Click the button below to randomly generate memes and endure endless entertainment!</p>
+		<br />
+		<button onclick="myFunction()" type = "button" class="btn btn-success" class="randombutton" style="size: 100px;">Click me</button>
+	</div>
+	<br />
+	<footer>
+		
 	</footer>
-
-
-
+	<br />
+	<br />
 </body>
 
 </html>
