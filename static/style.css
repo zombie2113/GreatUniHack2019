@@ -12,10 +12,7 @@ body, html{
 
 /*Nav-bar CSS*/
 	 .bg-img {
-	  /* The image used */
-	  background-image: url("header.JPG");
-
-	  min-height: 350px;
+	  min-height: 80px;
 
 	  /* Center and scale the image nicely */
 	  background-position: center;
@@ -30,7 +27,7 @@ body, html{
 	.container {
 	  position: absolute;
 	  margin: 20px;
-	  width: 95%;
+	  width: 98%;
 	}
 
 	/* The navbar */
@@ -67,7 +64,7 @@ body, html{
 
 .photo{
 	font: sans-serif;
-	font-size: 50px;
+	font-size: 30px;
 }
 
 .contain{
@@ -104,6 +101,12 @@ p{
   display: inline-block;
   font-size: 17px;
 }
+
+/*Styling for the Maps*/
+#map{
+      height:400px;
+      width:100%;
+    }
 
 /*Login page*/
 input[type=text],input[type=password],input[type=number], select, textarea {
